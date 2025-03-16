@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding-top: 40px;
+    overflow-x: hidden; /* Hides horizontal scrolling */
+    width: 100vw;
+}
+
+.some-class {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+#head{
+    position: absolute;
+    width: 142px;
+    height: 26px;
+    left: 94px;
+    top: 28px;
+    
+    font-family: 'Alexandria';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #7ED957;
+    
+    }
+.fixed-top {
+    position: fixed; /* Stays at the top */
+    top: 0; /* Aligns at the very top */
+    left: 0; /* Aligns to the left edge */
+    /* width: 100vw; */
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; /* Background color */
+    z-index: 1000;
+}
+#logo{
+    position: absolute;
+    width: 78px;
+    height: 46px;
+    left: 15px;
+    top: 18px;
+    
+    }
+#header{
+    display: flex;
+    height: 82px;
+    width: 100vw; /* 100% of the viewport width */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    align-items: center;
+    background-color: #285a29;
+}
+#webitem{
+    background-color: #285a29;
+    color: white;
+    border: none;
+    size: 20px;
+    font-size: 16;
+    font-weight: bold;
+} 
+#webitem:hover {
+    color: #7ED957;
+    size: 30px;
+    cursor: pointer;
+}
+/* .container {
+    position: absolute;
+    height: 82px;
+    max-width: 100%;
+    width: 100%; 
+    left: 438px;
+    top: 31px;
+} */
+.container {
+    position: relative; /* Change absolute to relative */
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto; /* Center the container */
+}
+
+h1 {
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+
+    background: url('Energenius.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 10px 0;
+    width: 310px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    transform: translateY(20%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -10px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    /* padding: 0 10px 0 5px; */
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #000000;
+    text-decoration: none;
+    padding: 70px;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+#login {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-container {
+    display: flex;
+    gap: 15px; /* Adds spacing between fields */
+    padding: 0;
+    margin: 0;
+}
+/* Gender Container */
+.gender-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between label and options */
+    margin: 10px 0;
+}
+
+/* Label Style */
+.gender-label {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Radio Button Styling */
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1em;
+    color: white;
+}

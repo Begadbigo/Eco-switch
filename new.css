@@ -1,0 +1,127 @@
+
+/* body{
+box-sizing: border-box;
+
+position: relative;
+width: 1440px;
+height: 1210px;
+
+background: #E1E1E1;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+}  */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.fixed-top {
+    position: fixed; /* Stays at the top */
+    top: 0; /* Aligns at the very top */
+    left: 0; /* Aligns to the left edge */
+    width: 100vw; /* Full width */
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; /* Background color */
+    /* z-index: 1000; Keeps it above other elements */
+}
+#main{
+position: absolute;
+width: 1341px;
+height: 911px;
+left: 0px;
+top: 28px;
+
+filter: blur(12.5px);
+
+}
+/* image 1 */
+#main{
+position: absolute;
+left: -11.26%;
+right: -16.03%; 
+top: 2.2%;
+bottom: 12.95%;
+
+background: url(image.png);
+
+}
+/* Welcome To Eco-Switch ! */
+#text{
+position: absolute;
+width: 1153px;
+height: 145px;
+left: calc(50% - 1153px/2 + 0.5px);
+top: 249px;
+
+font-family: 'Anton SC';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 145px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+
+}
+#header{
+box-sizing: border-box;
+position: absolute;
+width: 1440px;
+height: 82px;
+left: 0px;
+top: 0px;
+
+background: #2B5A29;
+border: 1px solid rgba(0, 0, 0, 0.3);
+border-radius: 2px;
+}
+
+#head{
+position: absolute;
+width: 142px;
+height: 26px;
+left: 94px;
+top: 28px;
+
+font-family: 'Alexandria';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+color: #7ED957;
+
+}
+
+/* About us | Calculator | Challenges | Market place Log in | Sign Up */
+#webitem{
+position: absolute;
+width: 915px;
+height: 24px;
+left: calc(50% - 915px/2 + 220.5px);
+top: 31px;
+
+font-family: 'Alexandria';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+#logo{
+
+position: absolute;
+width: 66.24px;
+height: 46px;
+left: 21px;
+top: 18px;
+
+background: url(anos_prev_ui.png);
+}

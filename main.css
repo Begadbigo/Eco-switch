@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hides horizontal scrolling */
+    width: 100%;
+}
+
+#head{
+    position: absolute;
+    width: 142px;
+    height: 26px;
+    left: 94px;
+    top: 28px;
+    
+    font-family: 'Alexandria';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #7ED957;
+    padding-left: 13px;
+    }
+.fixed-top {
+    position: fixed; /* Stays at the top */
+    top: 0; /* Aligns at the very top */
+    left: 0; /* Aligns to the left edge */
+    /* width: 100vw; */
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; /* Background color */
+    z-index: 1000;
+}
+#logo{
+    position: absolute;
+    width: 78px;
+    height: 46px;
+    left: 15px;
+    top: 18px;
+    
+    }
+#header{
+    display: flex;
+    height: 82px;
+    width: 100vw; /* 100% of the viewport width */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    align-items: center;
+    background-color: #285a29;
+}
+#webitem{
+    background-color: #285a29;
+    color: white;
+    border: none;
+    size: 20px;
+    font-size: 16;
+    font-weight: bold;
+} 
+#webitem:hover {
+    color: #7ED957;
+    size: 30px;
+    cursor: pointer;
+}
+/* .container {
+    position: absolute;
+    height: 82px;
+    width: 100vw; 
+    left: 438px;
+    top: 31px;
+} */
+.container {
+    position: relative; /* Change absolute to relative */
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto; /* Center the container */
+}
+#text {
+    position: absolute;
+    width: 1153px;
+    height: 145px;
+    left: calc(50% - 1153px/2 + 0.5px);
+    top: 249px;
+
+    font-family: 'Anton SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 145px;
+    text-align: center;
+
+    color: #000000;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+#main{
+position: absolute;
+width: 1341px;
+height: 911px;
+left: 0px;
+top: 28px;
+
+filter: blur(5px);
+
+}
+

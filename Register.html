@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Energenius</title>
+    <script src="register.js"></script>
+
+</head>
+
+<body>
+    <div  id = "header" class="fixed-top">
+        <a href="Main.html"><img id ="logo" src="anos_prev_ui.png" ></a>
+        <a href="Main.html"><t id="head">Eco-Switch</t></a>
+        <div class= "container">
+        <a href="main.html"><button id = "webitem" >About us</button></a> <t style="color: white; font-weight: bolder;">|</t>
+        <button id = "webitem">Calculator</button> <t style="color: white; font-weight: bolder;">|</t>
+        <a href="Challenges.html"><button id = "webitem">Challenges</button></a> <t style="color: white; font-weight: bolder;">|</t>
+        <button id = "webitem">Market place</button>
+    </div>
+    <div style="position: absolute; left: 1130px;">
+        <a href="Login.html"><button id="webitem">Login</button></a> <t style="color: white; font-weight: bolder;">|</t>
+        <a href="Register.html"><button style="color: #7ED957;" id = "webitem">Register</button></a>
+    </div>
+    </div>
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="registerForm">
+                    <div class="input-container">
+                        <div class="inputbox" style="width: 150px;">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input id="firstName" type="text" required>
+                            <label for="">First name</label>
+                        </div>
+                        <div class="inputbox" style="width: 150px;">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" id="secondName" required>
+                            <label for="">Second name</label>
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" id="nationalID" required>
+                        <label for="">National ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <select id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <label for="">Gender</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="number" id="age" required>
+                        <label for="">Age</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <button id="login" type="submit">Register</button>
+                </form>                
+                <div id="message"></div>
+            </div>
+        </div>
+
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Energenius</title>
+    <script src="register.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div id="header" class="fixed-top">
+        <a href="Main.html"><img id="logo" src="anos_prev_ui.png"></a>
+        <a href="Main.html"><t id="head">Eco-Switch</t></a>
+        <div class="container">
+            <a href="main.html"><button id="webitem">About us</button></a> <t style="color: white; font-weight: bolder;">|</t>
+            <button id="webitem">Calculator</button> <t style="color: white; font-weight: bolder;">|</t>
+            <a href="Challenges.html"><button id="webitem">Challenges</button></a> <t style="color: white; font-weight: bolder;">|</t>
+            <button id="webitem">Market place</button>
+        </div>
+        <div id="authButtons" style="position: absolute; left: 1130px;">
+            <a href="Login.html"><button id="loginBtn">Login</button></a>
+            <t style="color: white; font-weight: bolder;">|</t>
+            <a href="Register.html"><button id="registerBtn" style="color: #7ED957;">Register</button></a>
+        </div>
+        
+        <!-- User Profile (Hidden Initially) -->
+        <div id="userProfile" style="display: none; position: absolute; left: 1130px;">
+            <span id="userName"></span>
+            <img src="user_icon.png" id="userIcon" style="width: 30px; height: 30px; cursor: pointer;">
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </div>
+        
+    </div>
+
+    <!-- Registration Form -->
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="registerForm">
+                    <!-- First and Second Name -->
+                    <div class="input-container">
+                        <div class="inputbox" style="width: 150px;">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input id="firstName" type="text" required>
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="inputbox" style="width: 150px;">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="secondName" required>
+                            <label for="">Second Name</label>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" required>
+                        <label for="">Email</label>
+                    </div>
+
+                    <!-- National ID -->
+                    <div class="inputbox">
+                        <ion-icon name="card-outline"></ion-icon>
+                        <input type="text" id="nationalID" required>
+                        <label for="">National ID</label>
+                    </div>
+
+                    <!-- Gender as Radio Buttons -->
+                    <div class="gender-container">
+                        <label class="gender-label">Gender:</label>
+                        <div class="gender-options">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Male" required> Male
+                            </label>
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="Female" required> Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="inputbox">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <input type="number" id="age" required>
+                        <label for="">Age</label>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="">Password</label>
+                    </div>
+
+                    <!-- Register Button -->
+                    <button id="login" type="submit">Register</button>
+                </form>                
+                <div id="message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icons and Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

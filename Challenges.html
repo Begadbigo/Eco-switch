@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src='challenges.js'></script>
+    <script src='login.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div id="header" class="fixed-top">
+        <a href="Main.html"><img id="logo" src="anos_prev_ui.png"></a>
+        <a href="Main.html"><t id="head">Eco-Switch</t></a>
+        <div class="container">
+            <a href="main.html"><button id="webitem">About us</button></a> <t>|</t>
+            <button id="webitem">Calculator</button> <t>|</t>
+            <a href="Challenges.html"><button id="webitem">Challenges</button></a> <t>|</t>
+            <button id="webitem">Market place</button>
+        </div>
+        <div id="authButtons" style="position: absolute; left: 1130px;">
+            <a href="Login.html"><button id="webitem">Login</button></a> <t>|</t>
+            <a href="Register.html"><button style="color: #7ED957;" id="webitem">Register</button></a>
+        </div>
+        <div id="userProfile" style="display: none; position: absolute; left: 1130px; align-items: center; justify-content: center;">
+            <span id="userName" style="color: white; font-weight: bold; margin-right: 10px;"></span>
+            <img id="userIcon" src="icon.jpeg" style="width: 50px; height: 50px; cursor: pointer; border-radius: 40px;" >
+            <button id="logoutBtn" style="display: none; position: absolute; top: 40px;">Logout</button>
+        </div>
+        </div>
+    <h1>How old are You ?</h1>
+    <div class="buttons">
+        <button onclick="showChallenges('kids')">Kids (6-12)</button>
+        <button onclick="showChallenges('teens')">Teenagers (13-18)</button>
+        <button onclick="showChallenges('adults')">Adults (18+)</button>
+    </div>
+
+    <div id="challenges">
+        
+    </div>
+    <h1>User Ranking</h1>
+    <table id="rankingTable">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيتم ملء البيانات هنا باستخدام JavaScript -->
+        </tbody>
+    </table>
+    <button onclick="window.location.href='login.html'">Go to Login</button>
+</body>
+</html>

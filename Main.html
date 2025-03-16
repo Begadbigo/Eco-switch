@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eco-Switch</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="Background (1).png">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <img src="image.jpg" id="main">
+    <div id="header" class="fixed-top">
+        <a href="Main.html"><img id="logo" src="anos_prev_ui.png"></a>
+        <a href="Main.html"><t id="head">Eco-Switch</t></a>
+        <div class="container">
+            <a href="main.html"><button id="webitem">About us</button></a> <t>|</t>
+            <button id="webitem">Calculator</button> <t>|</t>
+            <a href="Challenges.html"><button id="webitem">Challenges</button></a> <t>|</t>
+            <button id="webitem">Market place</button>
+        </div>
+        <div id="authButtons" style="position: absolute; left: 1130px;">
+            <a href="Login.html"><button id="webitem">Login</button></a> <t>|</t>
+            <a href="Register.html"><button style="color: #7ED957;" id="webitem">Register</button></a>
+        </div>
+        <div id="userProfile" style="display: none; position: absolute; left: 1130px; align-items: center; justify-content: center;">
+            <span id="userName" style="color: white; font-weight: bold; margin-right: 10px;"></span>
+            <img id="userIcon" src="icon.jpeg" style="width: 50px; height: 50px; cursor: pointer; border-radius: 40px;" >
+            <button id="logoutBtn" style="display: none; position: absolute; top: 40px;">Logout</button>
+        </div>
+<p id="text"></p>
+
+<script>
+    const text = "Hello, welcome to Eco-switch!";
+    let i = 0;
+    let dots = 0;
+    let textDone = false;
+    let direction = 1; // 1 for adding dots, -1 for removing
+
+    function type() {
+        if (i < text.length) {
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 100); // Adjust typing speed here
+        } else {
+            textDone = true;
+            animateDots();
+        }
+    }
+
+    function animateDots() {
+        if (textDone) {
+            let dotsText = ".".repeat(dots);
+            document.getElementById("text").innerHTML = text + dotsText;
+
+            if (dots === 3) direction = -1; // Start removing dots
+            if (dots === 0) direction = 1;  // Start adding dots again
+
+            dots += direction;
+            setTimeout(animateDots, 300); // Adjust dots animation speed
+        }
+    }
+
+    type(); // Start typing animation
+</script>
+</body>
+</html>
